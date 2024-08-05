@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: hsl(0, 0%, 59%);
+  font-family: "Libre Franklin", sans-serif;
+}
+body {
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  width: 45%;
+  margin: auto;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  margin-bottom: 60px;
+}
+.announce {
+  font-weight: 300;
+  margin-top: 2.4rem;
+}
+span {
+  color: black;
+  font-weight: 700;
+}
+.suggestion {
+  color: black;
+  font-weight: 300;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.common {
+  border-radius: 25px;
+  border: 1px solid hsl(0, 0%, 59%);
+}
+label {
+  width: 80%;
+  border: none;
+}
+.email {
+  width: 93%;
+  padding-left: 1.2rem;
+  padding: 0.8rem 0 0.8rem 1.2rem;
+}
+.button {
+  width: 35%;
+  box-sizing: content-box;
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+.clicked{
+  background-color: hsl(223, 100%, 88%);
+  border: 1px solid hsl(223, 100%, 88%);
+  cursor: grabbing;
+}
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: inherit;
+}
+.dashboard {
+  width: 700px;
+}
+.social {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  width: 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+.icon {
+  border: 1px solid hsl(0, 0%, 59%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.warning {
+  color: red;
+  margin-top: 5px;
+  font-size: 14px;
+  font-style: italic;
+  margin-left: 1.5rem;
+}
+.redborder {
+  border: 1px solid hsl(354, 100%, 66%);
+}
+@media screen and (min-width: 700px) {
+  .button {
+    height: 41.594px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  label {
+    width: 100%;
+  }
+  .email {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .button {
+    width: 100%;
+    padding: 0.8rem 0;
+    margin-top: 0.8rem;
+  }
+  .dashboard {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+  }
+  .container {
+    width: 90%;
+    margin-top: 3rem;
+  }
+  .social {
+    position: fixed;
+    bottom: 30px;
+  }
+}
