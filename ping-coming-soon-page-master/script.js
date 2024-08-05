@@ -38,3 +38,6 @@ button.addEventListener('mousedown', () => {
 button.addEventListener('mouseup', () => {
   button.classList.remove('clicked');
 });
+button.addEventListener('mouseleave', () => {
+  button.classList.remove('clicked'); // Remove class if mouse leaves the button area
+});
